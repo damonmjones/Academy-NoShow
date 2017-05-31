@@ -1,4 +1,5 @@
 ﻿using OnShow.Models;
+using System;
 using System.Collections.Generic;
 
 namespace OnShow.Interfaces.ViewModels
@@ -8,7 +9,7 @@ namespace OnShow.Interfaces.ViewModels
         string Venue { get; set; }
         string Date { get; set; }
         string Time { get; set; }
-        int Genre { get; set; }
+        Guid Genre { get; set; }
         IEnumerable<Genre> Genres { get; set; }
     }
 }

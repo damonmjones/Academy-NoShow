@@ -206,6 +206,7 @@
     <Compile Include="Interfaces\Models\IGig.cs" />
     <Compile Include="Interfaces\Services\IGenreService.cs" />
     <Compile Include="Interfaces\Services\IGigService.cs" />
+    <Compile Include="Interfaces\Services\IUserService.cs" />
     <Compile Include="Interfaces\ViewModels\IGigViewModel.cs" />
     <Compile Include="Migrations\201705301423398_InitialModel.cs" />
     <Compile Include="Migrations\201705301423398_InitialModel.Designer.cs">
@@ -223,6 +224,10 @@
     <Compile Include="Migrations\201705301544236_PopulateGenreTable.Designer.cs">
       <DependentUpon>201705301544236_PopulateGenreTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705311349004_AddForeignKeyPRoperties.cs" />
+    <Compile Include="Migrations\201705311349004_AddForeignKeyPRoperties.Designer.cs">
+      <DependentUpon>201705311349004_AddForeignKeyPRoperties.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -233,6 +238,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GenreService.cs" />
     <Compile Include="Services\GigService.cs" />
+    <Compile Include="Services\UserService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\GigFormViewModel.cs" />
   </ItemGroup>
@@ -321,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705301544236_PopulateGenreTable.resx">
       <DependentUpon>201705301544236_PopulateGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705311349004_AddForeignKeyPRoperties.resx">
+      <DependentUpon>201705311349004_AddForeignKeyPRoperties.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

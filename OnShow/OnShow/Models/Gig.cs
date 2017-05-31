@@ -7,9 +7,10 @@ namespace OnShow.Models
     public class Gig : IGig
     {
         public Guid Id { get; set; }
+        public ApplicationUser Artist { get; set; }
 
         [Required]
-        public ApplicationUser Artist { get; set; }
+        public string ArtistId { get; set; }
 
         public DateTime DateTime { get; set; }
 
@@ -17,7 +18,9 @@ namespace OnShow.Models
         [StringLength(255)]
         public string Venue { get; set; }
 
-        [Required]
         public Genre Genre { get; set; }
+
+        [Required]
+        public Guid GenreId { get; set; }
     }
 }

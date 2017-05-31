@@ -1,5 +1,5 @@
-﻿using System;
-using OnShow.Models;
+﻿using OnShow.Models;
+using System;
 
 namespace OnShow.Interfaces.Models
 {
@@ -7,8 +7,10 @@ namespace OnShow.Interfaces.Models
     {
         Guid Id { get; set; }
         ApplicationUser Artist { get; set; }
+        string ArtistId { get; set; }
         DateTime DateTime { get; set; }
         string Venue { get; set; }
         Genre Genre { get; set; }
+        Guid GenreId { get; set; }
     }
 }
